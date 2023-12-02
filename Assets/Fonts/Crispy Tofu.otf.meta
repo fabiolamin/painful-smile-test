@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c6053d1cb1bf0ff4ba5d55b9265db50d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Crispy Tofu
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a6f07060bd2ce1b47af31d98ae761a38, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
