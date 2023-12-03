@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PirateGame.Utils
 {
-    public class FollowBar : MonoBehaviour
+    public class FollowUIBar : MonoBehaviour
     {
         private Transform _target;
         private Vector3 _offset;
