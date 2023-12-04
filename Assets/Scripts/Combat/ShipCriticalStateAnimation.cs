@@ -6,7 +6,7 @@ namespace PirateGame.Combat
 {
     public class ShipCriticalStateAnimation : MonoBehaviour
     {
-        private const string _criticalStateAnimationName = "Burning";
+        private const string _shipBurningTrigger = "IsBurning";
         private bool _haveComponentsLeft = false;
 
         [SerializeField] private Animator _animator;
@@ -40,7 +40,7 @@ namespace PirateGame.Combat
 
         public void SetCriticalState(bool isCriticalState)
         {
-            _animator.SetBool(_criticalStateAnimationName, isCriticalState);
+            _animator.SetBool(_shipBurningTrigger, isCriticalState);
             CheckCrewEscaping(isCriticalState);
         }
 
