@@ -34,7 +34,12 @@ namespace PirateGame.AI.Enemy
 
         protected virtual void OnEnable()
         {
-            SetDestination();
+            NavigationAgent.NewPathRequested += GetDestination;
+        }
+
+        protected virtual void OnDisable()
+        {
+            NavigationAgent.NewPathRequested -= GetDestination;
         }
 
         private void CheckAttack()
@@ -52,7 +57,7 @@ namespace PirateGame.AI.Enemy
             }
         }
 
-        protected abstract void SetDestination();
+        protected abstract Transform GetDestination();
         protected abstract void AttackTarget();
     }
 }

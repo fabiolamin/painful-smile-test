@@ -21,9 +21,9 @@ namespace PirateGame.AI.Enemy
             return Vector2.Distance(transform.position, target.transform.position) <= shipCombatData.MinShootingDistance;
         }
 
-        protected override void SetDestination()
+        protected override Transform GetDestination()
         {
-            navigationAgent.Destination = navigationAgent.PathFinder.WaypointData.GetRandomWaypoint(transform.position).transform;
+            return navigationAgent.PathFinder.WaypointData.GetRandomWaypoint(transform.position).transform;
         }
 
         protected override void AttackTarget()

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,13 +12,14 @@ namespace PirateGame.AI.Navigation
         [SerializeField] private UnityEvent<Vector2> _onAgentMoved;
         [SerializeField] private Collider2D _collider;
 
-        public Transform Destination { get; set; }
         public PathFinder PathFinder { get { return _pathFinder; } }
+
+        public Func<Transform> NewPathRequested;
 
         public void StartMovement()
         {
             Waypoint startingWaypoint = PathFinder.WaypointData.GetStartingWaypoint(transform.position);
-            PathFinder.GetReadyToFindNewPath(startingWaypoint, Destination);
+            PathFinder.GetReadyToFindNewPath(startingWaypoint, NewPathRequested.Invoke());
             _isReadyToMove = true;
         }
 
@@ -50,7 +52,7 @@ namespace PirateGame.AI.Navigation
             if (PathFinder.IsPathComplete(_collider))
             {
                 Waypoint startingWaypoint = PathFinder.WaypointData.GetStartingWaypoint(transform.position);
-                PathFinder.GetReadyToFindNewPath(startingWaypoint, Destination);
+                PathFinder.GetReadyToFindNewPath(startingWaypoint, NewPathRequested.Invoke());
             }
         }
     }

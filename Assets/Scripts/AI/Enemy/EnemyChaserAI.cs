@@ -28,9 +28,9 @@ namespace PirateGame.AI.Enemy
             return (target.gameObject == collision.gameObject) && !isReadyToAttackPlayer;
         }
 
-        protected override void SetDestination()
+        protected override Transform GetDestination()
         {
-            navigationAgent.Destination = target.transform;
+            return target.transform;
         }
 
         protected override void AttackTarget()
