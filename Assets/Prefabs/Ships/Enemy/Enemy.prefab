@@ -68,7 +68,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onDied.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onDisabled.m_PersistentCalls.m_Calls.Array.size
@@ -84,7 +84,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onDied.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _test.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -93,7 +93,7 @@ PrefabInstance:
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: 2fdc5337893a67b45a0c1aea77e3f568, type: 2}
+      objectReference: {fileID: 11400000, guid: b2189741471f5ee4b973f6e5b1b18722, type: 2}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _test.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -108,7 +108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onDied.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: AddPoints
+      value: RemoveEnemyFromGameSession
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onDisabled.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -136,15 +136,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onDied.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PirateGame.Data.Score.ScoreData, Assembly-CSharp
+      value: PirateGame.Data.Game.GameSessionData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onDied.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: 
+      value: Explode
       objectReference: {fileID: 0}
     - target: {fileID: 4226058871799480161, guid: 39683ab959b4eb447896d2469ff6668e, type: 3}
       propertyPath: _onLastDamage.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
