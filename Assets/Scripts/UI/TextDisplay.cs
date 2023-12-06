@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PirateGame.Utils
+namespace PirateGame.UI
 {
     public class TextDisplay : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PirateGame.Utils
+namespace PirateGame.UI
 {
     public class FollowUIBar : MonoBehaviour
     {
